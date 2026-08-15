@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-  <loc>https://abbarepuestos.com/</loc>
+    <loc>https://abbarepuestos.com/</loc>
   </url>
+
+  <url>
+    <loc>https://abbarepuestos.com/repuestos-abba-bogota.html</loc>
+  </url>
+
 </urlset>
