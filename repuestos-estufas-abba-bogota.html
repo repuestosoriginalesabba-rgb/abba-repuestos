@@ -59,14 +59,10 @@
       gap: 20px;
     }
 
-    .logo {
-      font-size: 27px;
-      font-weight: 900;
-      color: #111;
-    }
-
-    .logo span {
-      color: #d9a441;
+    .logo img {
+      width: 150px;
+      height: auto;
+      display: block;
     }
 
     .links {
@@ -225,6 +221,10 @@
     }
 
     @media (max-width: 800px) {
+      .navin {
+        flex-direction: column;
+      }
+
       .links {
         display: none;
       }
@@ -239,6 +239,10 @@
 
       .hero {
         padding: 55px 5%;
+      }
+
+      .logo img {
+        width: 140px;
       }
     }
   </style>
@@ -296,7 +300,9 @@
 
   <div class="top">
     📲 Cotizaciones por WhatsApp:
-    <a href="https://wa.me/573219140639?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20para%20estufa%20ABBA" target="_blank" rel="noopener">
+    <a href="https://wa.me/573219140639?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20para%20estufa%20ABBA"
+       target="_blank"
+       rel="noopener">
       321 914 0639
     </a>
     · Bogotá y envíos a nivel nacional
@@ -306,7 +312,9 @@
     <div class="navin">
 
       <div class="logo">
-        ABBA <span>REPUESTOS</span>
+        <img src="https://abbarepuestos.com/logo-abba-repuestos.png"
+             alt="ABBA Repuestos - Repuestos originales ABBA en Bogotá"
+             width="150">
       </div>
 
       <div class="links">
