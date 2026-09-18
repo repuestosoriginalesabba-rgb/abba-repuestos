@@ -5,21 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Repuestos y Servicio Técnico para Electrodomésticos | Bogotá y Colombia</title>
+  <title>Centro Especializado de Repuestos y Servicio Técnico | Bogotá y Colombia</title>
 
-  <meta name="description" content="Centro especializado en repuestos y servicio técnico para electrodomésticos en Bogotá y Colombia. Repuestos para ABBA, Mabe, Electrolux, Centrales, Haceb, Challenger, Whirlpool, Samsung, LG, Bosch y otras marcas.">
-
-  <meta name="keywords" content="repuestos electrodomésticos Bogotá, servicio técnico electrodomésticos Bogotá, repuestos ABBA, repuestos Mabe, repuestos Electrolux, repuestos Centrales, repuestos Haceb, repuestos Challenger, repuestos Whirlpool, repuestos Samsung, repuestos LG, repuestos Bosch, repuestos Colombia">
+  <meta name="description" content="Centro especializado en repuestos, instalación, mantenimiento y servicio técnico para electrodomésticos de diferentes marcas. ABBA, Mabe, Electrolux, Centrales, Haceb, Challenger, Whirlpool, Samsung, LG, Bosch y más. Bogotá y Colombia.">
 
   <meta name="robots" content="index, follow">
   <meta name="author" content="Centro Especializado de Repuestos y Servicio Técnico">
 
-  <meta property="og:title" content="Repuestos y Servicio Técnico para Electrodomésticos">
-  <meta property="og:description" content="Repuestos y servicio técnico para electrodomésticos de múltiples marcas en Bogotá y Colombia.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://abbarepuestos.com/">
-
   <link rel="canonical" href="https://abbarepuestos.com/">
+
+  <meta property="og:title" content="Centro Especializado de Repuestos y Servicio Técnico">
+  <meta property="og:description" content="Repuestos, instalación, mantenimiento y servicio técnico para electrodomésticos en Bogotá y Colombia.">
+  <meta property="og:url" content="https://abbarepuestos.com/">
+  <meta property="og:type" content="website">
 
   <style>
     * {
@@ -41,34 +39,42 @@
 
     header {
       background: #111;
-      color: #fff;
-      padding: 18px 20px;
+      color: white;
+      padding: 12px 18px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      box-shadow: 0 2px 12px rgba(0,0,0,.3);
     }
 
     .nav {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
     }
 
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #d4af37;
+    .logo img {
+      max-width: 190px;
+      max-height: 70px;
+      display: block;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      margin-left: 15px;
       font-size: 14px;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -76,26 +82,32 @@
     }
 
     .hero {
-      background: linear-gradient(135deg, #111 0%, #252525 55%, #3b321b 100%);
+      background:
+        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.82)),
+        url("logo-abba-repuestos.png") center/cover no-repeat;
       color: #fff;
-      padding: 75px 20px;
+      padding: 85px 20px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 38px;
-      max-width: 850px;
+    .hero-content {
+      max-width: 900px;
       margin: auto;
-      color: #fff;
     }
 
-    .hero h1 span {
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .gold {
       color: #d4af37;
     }
 
     .hero p {
-      max-width: 760px;
-      margin: 20px auto 30px;
+      max-width: 780px;
+      margin: 0 auto 28px;
       font-size: 18px;
       color: #eee;
     }
@@ -116,12 +128,17 @@
       transition: .2s;
     }
 
-    .btn-primary {
+    .btn-gold {
       background: #d4af37;
       color: #111;
     }
 
-    .btn-secondary {
+    .btn-dark {
+      background: #111;
+      color: #fff;
+    }
+
+    .btn-outline {
       border: 1px solid #d4af37;
       color: #fff;
     }
@@ -131,11 +148,11 @@
     }
 
     section {
-      padding: 55px 20px;
+      padding: 58px 20px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
     }
 
@@ -152,32 +169,53 @@
 
     .section-title p {
       color: #666;
-      max-width: 720px;
+      max-width: 800px;
       margin: auto;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
     }
 
     .card {
       background: #fff;
+      padding: 28px 22px;
       border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 3px 14px rgba(0,0,0,.08);
-      border-top: 3px solid #d4af37;
+      box-shadow: 0 4px 16px rgba(0,0,0,.08);
+      border-top: 4px solid #d4af37;
     }
 
     .card h3 {
       margin-bottom: 10px;
-      color: #222;
+      color: #111;
     }
 
     .card p {
       color: #666;
       font-size: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 14px;
+      color: #8b6b12;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .services {
+      background: #fff;
+    }
+
+    .service-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 9px;
+      margin-bottom: 15px;
+      background: #eee;
     }
 
     .brands {
@@ -201,56 +239,77 @@
     }
 
     .brand {
+      padding: 11px 18px;
       border: 1px solid #555;
       border-radius: 30px;
-      padding: 10px 18px;
+      background: #1b1b1b;
       color: #eee;
-      background: #1c1c1c;
     }
 
-    .brand strong {
+    .brand:first-child {
+      border-color: #d4af37;
       color: #d4af37;
     }
 
     .types {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
     }
 
     .type {
       background: #fff;
-      padding: 20px;
+      padding: 25px 15px;
       border-radius: 10px;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+      box-shadow: 0 3px 12px rgba(0,0,0,.07);
+    }
+
+    .type-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
     .type h3 {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+    }
+
+    .links {
+      background: #f0f0f0;
+    }
+
+    .link-card {
+      background: #fff;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+
+    .link-card a {
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-card a:hover {
+      color: #8b6b12;
     }
 
     .cta {
       background: #d4af37;
       text-align: center;
-      padding: 55px 20px;
     }
 
     .cta h2 {
-      color: #111;
       font-size: 30px;
+      color: #111;
       margin-bottom: 12px;
     }
 
     .cta p {
-      max-width: 700px;
-      margin: 0 auto 25px;
+      max-width: 750px;
+      margin: 0 auto 24px;
       color: #222;
-    }
-
-    .cta .btn {
-      background: #111;
-      color: #fff;
     }
 
     .contact {
@@ -258,12 +317,12 @@
     }
 
     .contact-box {
-      max-width: 750px;
+      max-width: 800px;
       margin: auto;
-      text-align: center;
-      background: #f7f7f7;
       padding: 35px 20px;
+      background: #f7f7f7;
       border-radius: 14px;
+      text-align: center;
       border: 1px solid #ddd;
     }
 
@@ -271,8 +330,8 @@
       display: inline-block;
       margin: 15px 0;
       font-size: 28px;
-      font-weight: bold;
       color: #111;
+      font-weight: bold;
       text-decoration: none;
     }
 
@@ -280,7 +339,7 @@
       background: #111;
       color: #aaa;
       text-align: center;
-      padding: 25px 15px;
+      padding: 28px 15px;
       font-size: 13px;
     }
 
@@ -289,6 +348,7 @@
     }
 
     @media (max-width: 700px) {
+
       header {
         position: static;
       }
@@ -297,17 +357,20 @@
         flex-direction: column;
       }
 
+      .logo img {
+        max-width: 160px;
+      }
+
       nav {
-        text-align: center;
+        gap: 9px;
       }
 
       nav a {
-        display: inline-block;
-        margin: 5px 7px;
+        font-size: 13px;
       }
 
       .hero {
-        padding: 55px 18px;
+        padding: 60px 18px;
       }
 
       .hero h1 {
@@ -326,12 +389,17 @@
 
 <header>
   <div class="nav">
-    <div class="logo">Centro Especializado</div>
 
 ```
+<a class="logo" href="/">
+  <img src="logo-abba-repuestos.png"
+       alt="Centro Especializado de Repuestos y Servicio Técnico para Electrodomésticos">
+</a>
+
 <nav>
   <a href="#repuestos">Repuestos</a>
   <a href="#servicio">Servicio Técnico</a>
+  <a href="#instalacion">Instalación</a>
   <a href="#marcas">Marcas</a>
   <a href="#contacto">Contacto</a>
 </nav>
@@ -343,26 +411,35 @@
 <main>
 
   <section class="hero">
-    <h1>
-      Repuestos y <span>Servicio Técnico</span>
-      para Electrodomésticos
-    </h1>
+    <div class="hero-content">
 
 ```
-<p>
-  Centro especializado en repuestos y soluciones para
-  electrodomésticos de diferentes marcas en Bogotá y Colombia.
-</p>
+  <h1>
+    Centro Especializado de
+    <span class="gold">Repuestos y Servicio Técnico</span>
+    para Electrodomésticos
+  </h1>
 
-<div class="buttons">
-  <a class="btn btn-primary"
-     href="https://wa.me/573219140639?text=Hola,%20quiero%20consultar%20por%20un%20repuesto%20o%20servicio%20t%C3%A9cnico">
-    Consultar por WhatsApp
-  </a>
+  <p>
+    Repuestos, instalación, mantenimiento, diagnóstico y
+    servicio técnico para electrodomésticos de diferentes
+    marcas en Bogotá y Colombia.
+  </p>
 
-  <a class="btn btn-secondary" href="#repuestos">
-    Ver servicios
-  </a>
+  <div class="buttons">
+
+    <a class="btn btn-gold"
+       href="https://wa.me/573219140639?text=Hola,%20quiero%20consultar%20por%20un%20repuesto%20o%20servicio%20t%C3%A9cnico">
+      CONSULTAR POR WHATSAPP
+    </a>
+
+    <a class="btn btn-outline"
+       href="tel:+573219140639">
+      LLAMAR 321 914 0639
+    </a>
+
+  </div>
+
 </div>
 ```
 
@@ -375,43 +452,55 @@
   <div class="section-title">
     <h2>Repuestos para Electrodomésticos</h2>
     <p>
-      Consulta disponibilidad de repuestos según la marca,
-      referencia y modelo de tu electrodoméstico.
+      Consulta por marca, referencia, modelo o fotografía
+      del repuesto que necesitas.
     </p>
   </div>
 
   <div class="cards">
 
     <div class="card">
-      <h3>Repuestos originales</h3>
+      <h3>Repuestos ABBA</h3>
       <p>
-        Repuestos para diferentes marcas y modelos de
-        electrodomésticos.
+        Repuestos para electrodomésticos ABBA según
+        referencia y disponibilidad.
       </p>
+      <a href="/repuestos-abba-bogota.html">
+        Ver repuestos ABBA →
+      </a>
     </div>
 
     <div class="card">
-      <h3>Repuestos de línea blanca</h3>
+      <h3>Estufas</h3>
       <p>
-        Componentes y piezas para lavadoras, neveras,
-        estufas, hornos y otros electrodomésticos.
+        Perillas, vidrios, manijas y otros componentes
+        según referencia.
       </p>
+      <a href="/repuestos-estufas-abba-bogota.html">
+        Ver repuestos →
+      </a>
     </div>
 
     <div class="card">
-      <h3>Consulta por referencia</h3>
+      <h3>Neveras</h3>
       <p>
-        Envíanos la marca, referencia o una fotografía de
-        la pieza para ayudarte a identificarla.
+        Repuestos y componentes para diferentes modelos
+        de neveras.
       </p>
+      <a href="/repuestos-neveras-abba-bogota.html">
+        Ver repuestos →
+      </a>
     </div>
 
     <div class="card">
-      <h3>Envíos a Colombia</h3>
+      <h3>Lavadoras</h3>
       <p>
-        Consulta opciones de despacho para diferentes
-        ciudades del país.
+        Consulta repuestos según modelo y referencia
+        del equipo.
       </p>
+      <a href="/repuestos-lavadoras-abba-bogota.html">
+        Ver repuestos →
+      </a>
     </div>
 
   </div>
@@ -420,7 +509,7 @@
 
   </section>
 
-  <section id="servicio">
+  <section id="servicio" class="services">
     <div class="container">
 
 ```
@@ -428,42 +517,96 @@
     <h2>Servicio Técnico</h2>
     <p>
       Atención para diagnóstico, mantenimiento y reparación
-      de diferentes tipos de electrodomésticos.
+      de electrodomésticos según marca y modelo.
     </p>
   </div>
 
   <div class="cards">
 
     <div class="card">
-      <h3>Diagnóstico</h3>
-      <p>
-        Identificación de posibles fallas y orientación
-        sobre el repuesto requerido.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Mantenimiento</h3>
-      <p>
-        Mantenimiento preventivo y revisión de componentes
-        de electrodomésticos.
-      </p>
-    </div>
-
-    <div class="card">
+      <div class="service-image"
+           style="display:flex;align-items:center;justify-content:center;font-size:60px;">
+        🔧
+      </div>
       <h3>Reparación</h3>
       <p>
-        Servicio técnico para diferentes equipos y marcas,
-        sujeto a diagnóstico y disponibilidad.
+        Revisión y reparación de electrodomésticos según
+        diagnóstico.
+      </p>
+      <a href="/reparacion-electrodomesticos-bogota.html">
+        Más información →
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="service-image"
+           style="display:flex;align-items:center;justify-content:center;font-size:60px;">
+        ⚙️
+      </div>
+      <h3>Mantenimiento</h3>
+      <p>
+        Revisión preventiva y mantenimiento de equipos.
       </p>
     </div>
 
     <div class="card">
-      <h3>Asesoría</h3>
+      <div class="service-image"
+           style="display:flex;align-items:center;justify-content:center;font-size:60px;">
+        🛠️
+      </div>
+      <h3>Servicio Técnico</h3>
       <p>
-        Orientación para identificar referencias, piezas
-        y posibles soluciones.
+        Atención técnica para diferentes marcas y
+        electrodomésticos.
       </p>
+      <a href="/servicio-tecnico-electrodomesticos-bogota.html">
+        Ver servicio →
+      </a>
+    </div>
+
+  </div>
+</div>
+```
+
+  </section>
+
+  <section id="instalacion">
+    <div class="container">
+
+```
+  <div class="section-title">
+    <h2>Instalación de Electrodomésticos</h2>
+    <p>
+      Consulta disponibilidad de instalación según el tipo
+      de equipo, marca y ubicación.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Instalación</h3>
+      <p>
+        Servicio de instalación para diferentes tipos de
+        electrodomésticos, sujeto a cobertura y condiciones
+        del equipo.
+      </p>
+
+      <a href="/instalacion-electrodomesticos-bogota.html">
+        Ver instalación →
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>¿Necesitas instalar un equipo?</h3>
+      <p>
+        Escríbenos indicando marca, referencia, tipo de
+        electrodoméstico y ubicación.
+      </p>
+
+      <a href="https://wa.me/573219140639?text=Hola,%20quiero%20consultar%20por%20instalaci%C3%B3n%20de%20un%20electrodom%C3%A9stico">
+        Consultar instalación →
+      </a>
     </div>
 
   </div>
@@ -479,44 +622,51 @@
   <div class="section-title">
     <h2>Electrodomésticos</h2>
     <p>
-      Consulta por tu equipo y te orientamos según la marca
-      y referencia.
+      Consulta repuestos, instalación o servicio técnico
+      según el equipo que tengas.
     </p>
   </div>
 
   <div class="types">
 
     <div class="type">
+      <div class="type-icon">🧺</div>
       <h3>Lavadoras</h3>
       <p>Repuestos y servicio técnico.</p>
     </div>
 
     <div class="type">
+      <div class="type-icon">❄️</div>
       <h3>Neveras</h3>
-      <p>Componentes y servicio técnico.</p>
+      <p>Repuestos y servicio.</p>
     </div>
 
     <div class="type">
+      <div class="type-icon">🔥</div>
       <h3>Estufas</h3>
       <p>Repuestos y reparación.</p>
     </div>
 
     <div class="type">
+      <div class="type-icon">♨️</div>
       <h3>Hornos</h3>
       <p>Repuestos y servicio.</p>
     </div>
 
     <div class="type">
-      <h3>Calentadores</h3>
+      <div class="type-icon">🌀</div>
+      <h3>Secadoras</h3>
       <p>Consulta por referencia.</p>
     </div>
 
     <div class="type">
-      <h3>Pequeños electrodomésticos</h3>
+      <div class="type-icon">⚡</div>
+      <h3>Otros equipos</h3>
       <p>Consulta disponibilidad.</p>
     </div>
 
   </div>
+
 </div>
 ```
 
@@ -529,14 +679,14 @@
   <div class="section-title">
     <h2>Marcas</h2>
     <p>
-      Trabajamos con repuestos y servicio para diferentes
-      marcas. La disponibilidad depende de la referencia.
+      Consulta disponibilidad según marca, referencia y
+      modelo del electrodoméstico.
     </p>
   </div>
 
   <div class="brand-list">
 
-    <div class="brand"><strong>ABBA</strong></div>
+    <div class="brand">ABBA</div>
     <div class="brand">Mabe</div>
     <div class="brand">Electrolux</div>
     <div class="brand">Centrales</div>
@@ -551,81 +701,84 @@
     <div class="brand">Otras marcas</div>
 
   </div>
+
 </div>
 ```
 
   </section>
 
-  <section>
+  <section class="links">
     <div class="container">
 
 ```
   <div class="section-title">
-    <h2>¿Necesitas un repuesto?</h2>
+    <h2>También puedes consultar</h2>
     <p>
-      Para ayudarte de forma más precisa, puedes enviar
-      fotografía del electrodoméstico, placa de datos,
-      referencia o fotografía de la pieza.
+      Accede directamente a nuestras páginas de servicios
+      y repuestos.
     </p>
   </div>
 
   <div class="cards">
 
-    <div class="card">
-      <h3>1. Envíanos la referencia</h3>
-      <p>
-        Indica marca y referencia del electrodoméstico.
-      </p>
+    <div class="link-card">
+      <a href="/venta-electrodomesticos-bogota.html">
+        Electrodomésticos →
+      </a>
     </div>
 
-    <div class="card">
-      <h3>2. Envía fotografías</h3>
-      <p>
-        Una fotografía puede ayudar a identificar el
-        modelo o la pieza.
-      </p>
+    <div class="link-card">
+      <a href="/instalacion-electrodomesticos-bogota.html">
+        Instalación →
+      </a>
     </div>
 
-    <div class="card">
-      <h3>3. Te orientamos</h3>
-      <p>
-        Revisamos la información y te indicamos las
-        opciones disponibles.
-      </p>
+    <div class="link-card">
+      <a href="/reparacion-electrodomesticos-bogota.html">
+        Reparación →
+      </a>
+    </div>
+
+    <div class="link-card">
+      <a href="/servicio-tecnico-electrodomesticos-bogota.html">
+        Servicio técnico →
+      </a>
     </div>
 
   </div>
+
 </div>
 ```
 
   </section>
 
   <section class="cta">
-    <h2>¿Buscas un repuesto o servicio técnico?</h2>
 
 ```
+<h2>¿Buscas un repuesto o servicio?</h2>
+
 <p>
-  Escríbenos por WhatsApp con la marca, referencia,
-  modelo o fotografías del equipo.
+  Envíanos la marca, referencia, modelo o fotografías
+  del electrodoméstico y te orientamos.
 </p>
 
-<a class="btn"
+<a class="btn btn-dark"
    href="https://wa.me/573219140639?text=Hola,%20quiero%20consultar%20por%20un%20repuesto%20o%20servicio%20t%C3%A9cnico">
-  Hablar por WhatsApp
+  ESCRIBIR POR WHATSAPP
 </a>
 ```
 
   </section>
 
   <section id="contacto" class="contact">
-    <div class="container">
 
 ```
+<div class="container">
+
   <div class="section-title">
     <h2>Contacto</h2>
     <p>
-      Atención y consultas sobre repuestos y servicio
-      técnico para electrodomésticos.
+      Bogotá y envíos a diferentes ciudades de Colombia.
     </p>
   </div>
 
@@ -639,17 +792,19 @@
     </a>
 
     <p>
-      Bogotá y Colombia
+      Centro Especializado de Repuestos y Servicio Técnico
+      para Electrodomésticos
     </p>
 
     <br>
 
-    <a class="btn btn-primary"
+    <a class="btn btn-gold"
        href="https://wa.me/573219140639?text=Hola,%20quiero%20consultar%20por%20un%20repuesto%20o%20servicio%20t%C3%A9cnico">
-      Escribir ahora
+      CONTACTAR POR WHATSAPP
     </a>
 
   </div>
+
 </div>
 ```
 
@@ -658,17 +813,23 @@
 </main>
 
 <footer>
+
   <p>
     <strong>Centro Especializado de Repuestos y Servicio Técnico</strong>
   </p>
 
   <p>
-    Repuestos y servicio para electrodomésticos · Bogotá y Colombia
+    Repuestos · Instalación · Mantenimiento · Reparación
+  </p>
+
+  <p>
+    Bogotá · Colombia
   </p>
 
   <p>
     © 2026 Todos los derechos reservados.
   </p>
+
 </footer>
 
 </body>
