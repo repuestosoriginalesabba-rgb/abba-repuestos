@@ -4,73 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Servicio Técnico Haceb y Repuestos en Bogotá | Instalación y Reparación</title>
+  <title>Repuestos Haceb y Servicio Técnico en Bogotá | Atención Independiente</title>
 
-  <meta name="description" content="Servicio técnico independiente para electrodomésticos Haceb en Bogotá y municipios cercanos. Instalación, reparación, diagnóstico, mantenimiento y venta de repuestos. Envíos nacionales.">
+  <meta name="description" content="Consulta repuestos Haceb y servicio técnico independiente en Bogotá y Cundinamarca. Diagnóstico, instalación, reparación, mantenimiento y envíos de repuestos a Colombia.">
 
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Centro Especializado de Repuestos y Servicio Técnico para Electrodomésticos">
-  <meta name="theme-color" content="#101010">
-
   <link rel="canonical" href="https://abbarepuestos.com/repuestos-haceb-bogota.html">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Servicio Técnico Haceb y Repuestos en Bogotá">
-  <meta property="og:description" content="Instalación, reparación, mantenimiento y venta de repuestos para electrodomésticos Haceb. Atención independiente en Bogotá y municipios cercanos.">
+  <meta property="og:title" content="Repuestos Haceb y Servicio Técnico en Bogotá">
+  <meta property="og:description" content="Consulta repuestos Haceb y atención técnica independiente para electrodomésticos en Bogotá y municipios cercanos.">
   <meta property="og:url" content="https://abbarepuestos.com/repuestos-haceb-bogota.html">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="https://abbarepuestos.com/logo-abba-repuestos.png">
-  <meta property="og:locale" content="es_CO">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://abbarepuestos.com/repuestos-haceb-bogota.html#webpage",
-        "name": "Servicio Técnico Haceb y Repuestos en Bogotá",
-        "description": "Información sobre servicio técnico independiente, instalación, reparación, mantenimiento y consulta de repuestos para electrodomésticos Haceb.",
-        "url": "https://abbarepuestos.com/repuestos-haceb-bogota.html",
-        "inLanguage": "es-CO",
-        "isPartOf": {
-          "@type": "WebSite",
-          "name": "Centro Especializado de Repuestos y Servicio Técnico para Electrodomésticos",
-          "url": "https://abbarepuestos.com/"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://abbarepuestos.com/repuestos-haceb-bogota.html#servicio",
-        "name": "Servicio técnico independiente y repuestos Haceb",
-        "serviceType": [
-          "Diagnóstico de electrodomésticos",
-          "Instalación de electrodomésticos",
-          "Reparación de electrodomésticos",
-          "Mantenimiento preventivo y correctivo",
-          "Venta y consulta de repuestos"
-        ],
-        "provider": {
-          "@type": "Organization",
-          "name": "Centro Especializado de Repuestos y Servicio Técnico para Electrodomésticos",
-          "url": "https://abbarepuestos.com/",
-          "telephone": "+573219140639"
-        },
-        "areaServed": [
-          "Bogotá",
-          "Soacha",
-          "Chía",
-          "Cota",
-          "Mosquera",
-          "Funza",
-          "Madrid"
-        ],
-        "url": "https://abbarepuestos.com/repuestos-haceb-bogota.html"
-      }
-    ]
-  }
-  </script>
+  <link rel="icon" href="https://abbarepuestos.com/logo-abba-repuestos.png">
+  <link rel="apple-touch-icon" href="https://abbarepuestos.com/logo-abba-repuestos.png">
+
+  <meta name="theme-color" content="#111111">
 
   <style>
+    :root {
+      --negro: #111111;
+      --negro2: #1b1b1b;
+      --dorado: #d4af37;
+      --blanco: #ffffff;
+      --gris: #bdbdbd;
+      --fondo: #f7f7f7;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -83,836 +44,921 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #101010;
-      color: #eeeeee;
+      color: #222;
+      background: var(--fondo);
       line-height: 1.7;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
     }
 
-    header {
-      background: #080808;
-      border-bottom: 2px solid #d4af37;
-      padding: 17px 15px;
+    .topbar {
+      background: var(--negro);
+      color: white;
       text-align: center;
+      padding: 11px 15px;
+      font-size: 14px;
     }
 
-    .logo img {
-      width: 125px;
-      max-width: 100%;
+    .topbar a {
+      color: var(--dorado);
+      font-weight: bold;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 15px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+      width: 75px;
       height: auto;
-      display: block;
-      margin: 0 auto 10px;
+      margin-bottom: 8px;
     }
 
-    .brand {
-      color: #d4af37;
+    .brand-name {
+      color: var(--negro);
       font-size: 21px;
       font-weight: bold;
-      line-height: 1.35;
     }
 
-    .subtitle {
-      color: #cccccc;
-      font-size: 12px;
-      margin-top: 5px;
+    .brand-description {
+      color: #666;
+      font-size: 14px;
     }
 
     nav {
+      background: var(--negro);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 9px;
+      gap: 8px;
       padding: 13px 10px;
-      background: #171717;
     }
 
     nav a {
-      color: #e5c65b;
-      border: 1px solid #9e812c;
-      border-radius: 20px;
-      padding: 6px 13px;
+      color: white;
       font-size: 13px;
+      padding: 8px 12px;
+      border-radius: 20px;
     }
 
     nav a:hover {
-      background: #d4af37;
-      color: #111;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1050px;
-      margin: auto;
+      background: var(--dorado);
+      color: var(--negro);
     }
 
     .hero {
+      background: linear-gradient(135deg, #111, #292929);
+      color: white;
       text-align: center;
-      padding: 55px 12px 45px;
-      background: linear-gradient(135deg, #101010, #242018);
+      padding: 65px 20px;
     }
 
-    .hero-icon {
-      font-size: 55px;
+    .hero .eyebrow {
+      color: var(--dorado);
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
       margin-bottom: 12px;
     }
 
-    .badge {
-      display: inline-block;
-      border: 1px solid #d4af37;
-      color: #e3c35b;
-      border-radius: 25px;
-      padding: 6px 15px;
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 17px;
-    }
-
-    h1, h2, h3 {
-      color: #e3c35b;
-      line-height: 1.3;
-    }
-
-    h1 {
-      font-size: 34px;
-      margin-bottom: 18px;
-    }
-
-    h2 {
-      font-size: 25px;
-      margin-bottom: 16px;
-    }
-
-    h3 {
-      font-size: 18px;
-      margin-bottom: 9px;
-    }
-
-    p {
-      margin-bottom: 13px;
+    .hero h1 {
+      font-size: clamp(27px, 5vw, 42px);
+      line-height: 1.2;
+      max-width: 850px;
+      margin: 0 auto 20px;
     }
 
     .hero p {
-      max-width: 800px;
-      margin: 0 auto 15px;
+      max-width: 780px;
+      margin: 0 auto 16px;
+      color: #eeeeee;
     }
 
-    .gold {
-      color: #e3c35b;
+    .hero .coverage {
+      color: var(--dorado);
       font-weight: bold;
+      margin-bottom: 25px;
     }
 
     .buttons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 12px;
-      margin-top: 24px;
+      margin-top: 25px;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 19px;
-      border-radius: 7px;
+      background: var(--dorado);
+      color: #111;
+      padding: 13px 20px;
+      border-radius: 5px;
       font-weight: bold;
-      text-align: center;
+      font-size: 13px;
+      transition: 0.2s;
     }
 
-    .btn-gold {
-      background: #d4af37;
-      color: #111111;
+    .btn:hover {
+      background: #f0cf63;
+      transform: translateY(-2px);
     }
 
     .btn-outline {
-      border: 1px solid #d4af37;
-      color: #e3c35b;
+      background: transparent;
+      color: var(--dorado);
+      border: 1px solid var(--dorado);
     }
 
-    section {
-      padding: 38px 0;
-      border-top: 1px solid #333333;
-      scroll-margin-top: 15px;
+    .btn-outline:hover {
+      background: var(--dorado);
+      color: var(--negro);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: auto;
+      padding: 48px 20px;
+    }
+
+    .section-title {
+      color: var(--negro);
+      font-size: 27px;
+      text-align: center;
+      margin-bottom: 15px;
+      line-height: 1.3;
     }
 
     .section-intro {
-      color: #cccccc;
-      margin-bottom: 22px;
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--dorado);
+      margin: 0 auto 25px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: #1b1b1b;
-      border: 1px solid #51431d;
-      border-radius: 10px;
-      padding: 21px;
+      background: white;
+      padding: 25px 22px;
+      border-radius: 9px;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.045);
     }
 
-    .card-icon {
-      font-size: 35px;
-      margin-bottom: 9px;
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: var(--negro);
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     .card p {
-      color: #cccccc;
+      color: #555;
       font-size: 14px;
-      margin-bottom: 0;
     }
 
     .card a {
       display: inline-block;
-      color: #e3c35b;
+      color: #8b6b13;
       font-weight: bold;
-      margin-top: 12px;
-      text-decoration: underline;
+      font-size: 14px;
+      margin-top: 15px;
     }
 
-    .highlight {
-      background: #1b1b1b;
-      border-left: 4px solid #d4af37;
-      padding: 21px;
-      border-radius: 7px;
+    .dark-section {
+      background: var(--negro);
+      color: white;
     }
 
-    .coverage {
-      background: #191919;
-      padding: 35px 20px;
-      text-align: center;
-      border-top: 2px solid #d4af37;
-      border-bottom: 2px solid #d4af37;
+    .dark-section .section-title {
+      color: white;
     }
 
-    .faq details {
-      background: #1b1b1b;
-      border: 1px solid #49402a;
+    .dark-section .section-intro {
+      color: #ddd;
+    }
+
+    .dark-section .card {
+      background: var(--negro2);
+      border-color: #383838;
+    }
+
+    .dark-section .card h3 {
+      color: var(--dorado);
+    }
+
+    .dark-section .card p {
+      color: #e0e0e0;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      background: white;
+      padding: 23px;
       border-radius: 8px;
-      padding: 14px;
-      margin-bottom: 11px;
+      border-top: 3px solid var(--dorado);
     }
 
-    .faq summary {
-      color: #e3c35b;
+    .step-number {
+      color: #a17b12;
+      font-size: 25px;
       font-weight: bold;
-      cursor: pointer;
+      margin-bottom: 8px;
     }
 
-    .faq details p {
-      margin: 12px 0 0;
-      color: #dddddd;
+    .step h3 {
+      margin-bottom: 8px;
+      color: var(--negro);
     }
 
-    .contact {
+    .step p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .coverage-box {
+      background: white;
+      padding: 30px;
+      border-radius: 9px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
       text-align: center;
-      background: #191919;
-      padding: 32px 18px;
-      border: 1px solid #8d742b;
-      border-radius: 12px;
-      margin: 20px 0;
+    }
+
+    .coverage-box p {
+      margin-bottom: 15px;
+    }
+
+    .coverage-list {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .notice {
+      color: #666;
+      font-size: 14px;
+      margin-top: 17px;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 20px;
+      margin-bottom: 13px;
+      border-radius: 7px;
+      border-left: 3px solid var(--dorado);
+    }
+
+    .faq-item h3 {
+      color: var(--negro);
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .faq-item p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .contact-section {
+      background: linear-gradient(135deg, #111, #292929);
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .contact-section h2 {
+      color: var(--dorado);
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .contact-section p {
+      margin-bottom: 12px;
     }
 
     .phone {
-      display: block;
-      color: #e3c35b;
-      font-size: 27px;
+      display: inline-block;
+      color: var(--dorado);
+      font-size: 25px;
       font-weight: bold;
-      margin: 15px 0;
+      margin: 12px 0;
     }
 
     footer {
-      text-align: center;
-      padding: 27px 12px 95px;
       background: #080808;
-      color: #bbbbbb;
+      color: #ccc;
+      text-align: center;
+      padding: 28px 15px;
       font-size: 13px;
-      border-top: 2px solid #d4af37;
+    }
+
+    footer strong {
+      color: var(--dorado);
     }
 
     footer a {
-      color: #e3c35b;
-    }
-
-    .floating-whatsapp {
-      position: fixed;
-      right: 17px;
-      bottom: 18px;
-      z-index: 999;
-      background: #25D366;
-      color: #ffffff;
-      padding: 12px 17px;
-      border-radius: 35px;
-      font-weight: bold;
-      box-shadow: 0 3px 12px #00000088;
+      color: var(--dorado);
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 27px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
       .hero {
-        padding-top: 38px;
+        padding: 48px 17px;
       }
 
-      .btn {
-        width: 100%;
+      .container {
+        padding: 38px 16px;
+      }
+
+      .section-title {
+        font-size: 23px;
+      }
+
+      nav {
+        gap: 3px;
+      }
+
+      nav a {
+        font-size: 12px;
+        padding: 7px 9px;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Repuestos Haceb y Servicio Técnico en Bogotá",
+    "url": "https://abbarepuestos.com/repuestos-haceb-bogota.html",
+    "description": "Consulta repuestos Haceb y servicio técnico independiente en Bogotá y municipios cercanos.",
+    "inLanguage": "es-CO",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Centro Especializado de Repuestos y Servicio Técnico para Electrodomésticos",
+      "url": "https://abbarepuestos.com/"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-<header>
-  <a class="logo" href="https://abbarepuestos.com/" aria-label="Página principal">
-    <img src="/logo-abba-repuestos.png" alt="Centro especializado de repuestos y servicio técnico">
-  </a>
-
-  <div class="brand">
-    CENTRO ESPECIALIZADO
+  <div class="topbar">
+    📲 Atención y cotizaciones por WhatsApp:
+    <a href="https://wa.me/573219140639?text=Hola%2C%20quiero%20consultar%20servicio%20tecnico%20o%20repuestos%20Haceb">
+      321 914 0639
+    </a>
+    · Bogotá y municipios cercanos
   </div>
 
-  <div class="subtitle">
-    Repuestos y Servicio Técnico para Electrodomésticos
-  </div>
-</header>
+  <header>
+    <a href="https://abbarepuestos.com/">
+      <img
+        class="logo"
+        src="https://abbarepuestos.com/logo-abba-repuestos.png"
+        alt="Centro Especializado de Repuestos y Servicio Técnico"
+      >
+    </a>
+    <div class="brand-name">CENTRO ESPECIALIZADO</div>
+    <div class="brand-description">
+      Repuestos y Servicio Técnico para Electrodomésticos
+    </div>
+  </header>
 
-<nav aria-label="Navegación principal">
-  <a href="https://abbarepuestos.com/">Inicio</a>
-  <a href="https://abbarepuestos.com/repuestos-abba-bogota.html">ABBA</a>
-  <a href="#servicio">Servicio técnico</a>
-  <a href="#repuestos">Repuestos</a>
-  <a href="#cobertura">Cobertura</a>
-  <a href="#contacto">Contacto</a>
-</nav>
-
-<main>
+  <nav>
+    <a href="https://abbarepuestos.com/">Inicio</a>
+    <a href="#servicio">Servicio técnico</a>
+    <a href="#repuestos">Repuestos</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
   <section class="hero">
-    <div class="container">
+    <div class="eyebrow">HACEB · SERVICIO TÉCNICO Y REPUESTOS</div>
 
-      <div class="badge">HACEB · SERVICIO TÉCNICO Y REPUESTOS</div>
+    <h1>Servicio Técnico Haceb y Repuestos en Bogotá</h1>
 
-      <div class="hero-icon">🔧</div>
+    <p>
+      Consulta repuestos para electrodomésticos Haceb y solicita
+      atención técnica independiente. Ofrecemos orientación para
+      diagnóstico, instalación, reparación y mantenimiento de
+      diferentes equipos, según el modelo y el tipo de servicio.
+    </p>
 
-      <h1>Servicio Técnico Haceb y Repuestos en Bogotá</h1>
+    <p>
+      Atención para estufas, neveras, lavadoras, secadoras,
+      hornos, calentadores y otros electrodomésticos.
+    </p>
 
-      <p>
-        Consulta repuestos para electrodomésticos Haceb y solicita
-        atención técnica independiente. Ofrecemos orientación para
-        diagnóstico, instalación, reparación y mantenimiento de
-        diferentes equipos, según el modelo y el tipo de servicio.
-      </p>
+    <p class="coverage">
+      Bogotá y municipios cercanos. Envíos de repuestos a diferentes
+      ciudades de Colombia.
+    </p>
 
-      <p>
-        Atención para estufas, neveras, lavadoras, secadoras,
-        hornos, calentadores y otros electrodomésticos.
-      </p>
+    <div class="buttons">
+      <a class="btn"
+         href="https://wa.me/573219140639?text=Hola%2C%20necesito%20servicio%20tecnico%20para%20un%20electrodomestico%20Haceb">
+        SOLICITAR SERVICIO TÉCNICO
+      </a>
 
-      <p class="gold">
-        Bogotá y municipios cercanos. Envíos de repuestos
-        a diferentes ciudades de Colombia.
-      </p>
-
-      <div class="buttons">
-        <a class="btn btn-gold"
-           href="https://wa.me/573219140639?text=Hola%2C%20necesito%20servicio%20tecnico%20para%20un%20electrodomestico%20Haceb."
-           target="_blank" rel="noopener">
-          SOLICITAR SERVICIO TÉCNICO
-        </a>
-
-        <a class="btn btn-outline"
-           href="https://wa.me/573219140639?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20Haceb."
-           target="_blank" rel="noopener">
-          COTIZAR REPUESTOS
-        </a>
-      </div>
-
+      <a class="btn btn-outline"
+         href="https://wa.me/573219140639?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20Haceb">
+        COTIZAR REPUESTOS
+      </a>
     </div>
   </section>
 
-  <div class="container">
+  <section class="container" id="servicio">
+    <h2 class="section-title">
+      Servicio técnico independiente para electrodomésticos Haceb
+    </h2>
+    <div class="gold-line"></div>
 
-    <section id="servicio">
-      <h2>Servicio técnico independiente para electrodomésticos Haceb</h2>
+    <p class="section-intro">
+      Consulta nuestros servicios para diferentes tipos de
+      electrodomésticos. La atención se confirma de acuerdo con
+      el equipo, la falla, el lugar y las condiciones de instalación.
+    </p>
 
-      <p class="section-intro">
-        Consulta nuestros servicios para diferentes tipos de
-        electrodomésticos. La atención se confirma de acuerdo con
-        el equipo, la falla, el lugar y las condiciones de instalación.
-      </p>
-
-      <div class="grid">
-
-        <article class="card">
-          <div class="card-icon">🔍</div>
-          <h3>Diagnóstico técnico</h3>
-          <p>
-            Revisión del equipo para identificar posibles fallas
-            y establecer las alternativas de atención.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🛠️</div>
-          <h3>Reparación</h3>
-          <p>
-            Consulta por reparación de averías y fallas
-            de funcionamiento en electrodomésticos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">⚙️</div>
-          <h3>Mantenimiento</h3>
-          <p>
-            Mantenimiento preventivo y correctivo para ayudar
-            a conservar el buen funcionamiento de los equipos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🏠</div>
-          <h3>Instalación</h3>
-          <p>
-            Consulta por instalación de electrodomésticos
-            y revisión de las condiciones requeridas.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🔩</div>
-          <h3>Identificación de repuestos</h3>
-          <p>
-            Te ayudamos a identificar piezas mediante fotografías,
-            referencias y modelo del electrodoméstico.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">📲</div>
-          <h3>Atención por WhatsApp</h3>
-          <p>
-            Comparte los datos de tu equipo para consultar
-            disponibilidad, precio y opciones de atención.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Electrodomésticos que atendemos</h2>
-
-      <p class="section-intro">
-        Consulta servicio técnico, instalación, reparación,
-        mantenimiento y repuestos para diferentes equipos Haceb.
-        La disponibilidad depende del modelo y del tipo de intervención.
-      </p>
-
-      <div class="grid">
-
-        <article class="card">
-          <div class="card-icon">🔥</div>
-          <h3>Estufas y cubiertas</h3>
-          <p>
-            Consulta diagnóstico, instalación, reparación,
-            mantenimiento y repuestos para estufas.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">❄️</div>
-          <h3>Neveras</h3>
-          <p>
-            Consulta revisión, reparación, mantenimiento
-            y componentes según el modelo.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🧺</div>
-          <h3>Lavadoras</h3>
-          <p>
-            Atención de fallas, instalación, mantenimiento
-            y consulta de repuestos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">♨️</div>
-          <h3>Hornos</h3>
-          <p>
-            Consulta instalación, reparación, mantenimiento
-            y piezas para hornos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🌀</div>
-          <h3>Secadoras</h3>
-          <p>
-            Consulta por diagnóstico, reparación,
-            mantenimiento y repuestos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🚿</div>
-          <h3>Calentadores</h3>
-          <p>
-            Consulta disponibilidad para instalación,
-            revisión, mantenimiento y reparación.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🌬️</div>
-          <h3>Campanas extractoras</h3>
-          <p>
-            Consulta por instalación, mantenimiento,
-            reparación y componentes.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🍽️</div>
-          <h3>Otros electrodomésticos</h3>
-          <p>
-            También puedes consultar por lavavajillas
-            y otros equipos según disponibilidad.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="repuestos">
-      <h2>Venta y consulta de repuestos Haceb en Bogotá</h2>
-
-      <p class="section-intro">
-        Consulta repuestos originales y compatibles, según disponibilidad,
-        para diferentes electrodomésticos Haceb. Envíanos una fotografía,
-        el modelo o la referencia para ayudarte a identificar la pieza.
-      </p>
-
-      <div class="grid">
-
-        <article class="card">
-          <div class="card-icon">🔥</div>
-          <h3>Repuestos para estufas Haceb</h3>
-          <p>
-            Quemadores, parrillas, perillas, válvulas,
-            sistemas de encendido, vidrios y otros componentes.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">❄️</div>
-          <h3>Repuestos para neveras Haceb</h3>
-          <p>
-            Bandejas, entrepaños, accesorios, empaques
-            y componentes según referencia.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🧺</div>
-          <h3>Repuestos para lavadoras Haceb</h3>
-          <p>
-            Mangueras, perillas, tapas, transmisiones
-            y otros componentes según modelo.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">♨️</div>
-          <h3>Repuestos para hornos Haceb</h3>
-          <p>
-            Vidrios, manijas, perillas, accesorios
-            y componentes para hornos.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">🌀</div>
-          <h3>Repuestos para secadoras</h3>
-          <p>
-            Consulta piezas y componentes según
-            referencia y disponibilidad.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">⚙️</div>
-          <h3>Otros repuestos</h3>
-          <p>
-            Si buscas una pieza diferente, envíanos una fotografía
-            para orientarte sobre su identificación.
-          </p>
-        </article>
-
-      </div>
-
-      <div class="buttons">
-        <a class="btn btn-gold"
-           href="https://wa.me/573219140639?text=Hola%2C%20quiero%20consultar%20disponibilidad%20de%20un%20repuesto%20Haceb."
-           target="_blank" rel="noopener">
-          CONSULTAR REPUESTOS HACEB
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Repuestos Haceb con envíos a nivel nacional</h2>
-
-      <div class="highlight">
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🔍</div>
+        <h3>Diagnóstico técnico</h3>
         <p>
-          Desde Bogotá atendemos consultas de repuestos para clientes
-          de diferentes ciudades de Colombia.
+          Revisión del equipo para identificar posibles fallas
+          y establecer las alternativas de atención.
         </p>
+      </article>
 
+      <article class="card">
+        <div class="icon">🛠️</div>
+        <h3>Reparación</h3>
         <p>
-          Los envíos se coordinan mediante empresas transportadoras.
-          El costo y el tiempo de entrega se confirman al momento
-          de realizar la cotización.
+          Consulta por reparación de averías y fallas de
+          funcionamiento en electrodomésticos.
         </p>
+      </article>
 
-        <p class="gold">
-          Consulta disponibilidad, precio y opciones de envío
-          antes de realizar tu pedido.
+      <article class="card">
+        <div class="icon">⚙️</div>
+        <h3>Mantenimiento</h3>
+        <p>
+          Mantenimiento preventivo y correctivo para ayudar
+          a conservar el buen funcionamiento de los equipos.
         </p>
-      </div>
-    </section>
+      </article>
 
-    <section>
-      <h2>¿Cómo solicitar servicio técnico o repuestos?</h2>
+      <article class="card">
+        <div class="icon">🏠</div>
+        <h3>Instalación</h3>
+        <p>
+          Consulta por instalación de electrodomésticos y
+          revisión de las condiciones requeridas.
+        </p>
+      </article>
 
-      <div class="grid">
+      <article class="card">
+        <div class="icon">🔩</div>
+        <h3>Identificación de repuestos</h3>
+        <p>
+          Te ayudamos a identificar piezas mediante fotografías,
+          referencias y modelo del electrodoméstico.
+        </p>
+      </article>
 
-        <article class="card">
-          <div class="card-icon">1️⃣</div>
-          <h3>Cuéntanos qué necesitas</h3>
-          <p>
-            Indica si buscas instalación, reparación,
-            mantenimiento o un repuesto.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">2️⃣</div>
-          <h3>Comparte los datos del equipo</h3>
-          <p>
-            Envíanos fotografías, modelo y referencia
-            del electrodoméstico.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">3️⃣</div>
-          <h3>Consulta disponibilidad</h3>
-          <p>
-            Te informaremos sobre la atención técnica,
-            el repuesto, el precio y las opciones de entrega.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-  </div>
-
-  <section class="coverage" id="cobertura">
-    <div class="container">
-      <h2>Servicio técnico en Bogotá y municipios cercanos</h2>
-
-      <p>
-        Consulta disponibilidad de atención en
-        <strong class="gold">
-          Bogotá, Soacha, Chía, Cota, Mosquera, Funza y Madrid.
-        </strong>
-      </p>
-
-      <p>
-        Para repuestos, realizamos envíos a diferentes ciudades
-        y lugares de Colombia.
-      </p>
+      <article class="card">
+        <div class="icon">📲</div>
+        <h3>Atención por WhatsApp</h3>
+        <p>
+          Comparte los datos de tu equipo para consultar
+          disponibilidad, precio y opciones de atención.
+        </p>
+      </article>
     </div>
   </section>
 
-  <div class="container">
+  <section class="container dark-section">
+    <h2 class="section-title">Electrodomésticos que atendemos</h2>
+    <div class="gold-line"></div>
 
-    <section class="faq">
-      <h2>Preguntas frecuentes sobre servicio técnico y repuestos Haceb</h2>
+    <p class="section-intro">
+      Consulta servicio técnico, instalación, reparación,
+      mantenimiento y repuestos para diferentes equipos Haceb.
+      La disponibilidad depende del modelo y del tipo de intervención.
+    </p>
 
-      <details>
-        <summary>¿Ofrecen servicio técnico para electrodomésticos Haceb?</summary>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🔥</div>
+        <h3>Estufas y cubiertas</h3>
         <p>
-          Sí. Ofrecemos atención técnica independiente. Puedes consultar
-          diagnóstico, instalación, reparación y mantenimiento según
-          el tipo de equipo y la disponibilidad del servicio.
+          Consulta diagnóstico, instalación, reparación,
+          mantenimiento y repuestos para estufas.
         </p>
-      </details>
+      </article>
 
-      <details>
-        <summary>¿Qué electrodomésticos pueden atender?</summary>
+      <article class="card">
+        <div class="icon">❄️</div>
+        <h3>Neveras</h3>
         <p>
-          Puedes consultar por estufas, neveras, lavadoras, secadoras,
-          hornos, calentadores, campanas extractoras, lavavajillas
-          y otros electrodomésticos.
+          Consulta revisión, reparación, mantenimiento
+          y componentes según el modelo.
         </p>
-      </details>
+      </article>
 
-      <details>
-        <summary>¿Venden repuestos originales Haceb?</summary>
+      <article class="card">
+        <div class="icon">🧺</div>
+        <h3>Lavadoras</h3>
         <p>
-          Consulta disponibilidad de repuestos originales y compatibles.
-          La referencia y compatibilidad se verifican según el modelo
+          Atención de fallas, instalación, mantenimiento
+          y consulta de repuestos.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">♨️</div>
+        <h3>Hornos</h3>
+        <p>
+          Consulta instalación, reparación, mantenimiento
+          y piezas para hornos.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌀</div>
+        <h3>Secadoras</h3>
+        <p>
+          Consulta por diagnóstico, reparación,
+          mantenimiento y repuestos.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🚿</div>
+        <h3>Calentadores</h3>
+        <p>
+          Consulta disponibilidad para instalación,
+          revisión, mantenimiento y reparación.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌬️</div>
+        <h3>Campanas extractoras</h3>
+        <p>
+          Consulta por instalación, mantenimiento,
+          reparación y componentes.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🍽️</div>
+        <h3>Otros electrodomésticos</h3>
+        <p>
+          También puedes consultar por lavavajillas
+          y otros equipos según disponibilidad.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container" id="repuestos">
+    <h2 class="section-title">
+      Venta y consulta de repuestos Haceb en Bogotá
+    </h2>
+    <div class="gold-line"></div>
+
+    <p class="section-intro">
+      Consulta repuestos originales y compatibles, según disponibilidad,
+      para diferentes electrodomésticos Haceb. Envíanos una fotografía,
+      el modelo o la referencia para ayudarte a identificar la pieza.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🔥</div>
+        <h3>Repuestos para estufas Haceb</h3>
+        <p>
+          Quemadores, parrillas, perillas, válvulas,
+          sistemas de encendido, vidrios y otros componentes.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">❄️</div>
+        <h3>Repuestos para neveras Haceb</h3>
+        <p>
+          Bandejas, entrepaños, accesorios, empaques
+          y componentes según referencia.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🧺</div>
+        <h3>Repuestos para lavadoras Haceb</h3>
+        <p>
+          Mangueras, perillas, tapas, transmisiones
+          y otros componentes según modelo.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">♨️</div>
+        <h3>Repuestos para hornos Haceb</h3>
+        <p>
+          Vidrios, manijas, perillas, accesorios
+          y componentes para hornos.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌀</div>
+        <h3>Repuestos para secadoras</h3>
+        <p>
+          Consulta piezas y componentes según
+          referencia y disponibilidad.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">⚙️</div>
+        <h3>Otros repuestos</h3>
+        <p>
+          Si buscas una pieza diferente, envíanos
+          una fotografía para orientarte sobre su identificación.
+        </p>
+      </article>
+    </div>
+
+    <div class="buttons">
+      <a class="btn"
+         href="https://wa.me/573219140639?text=Hola%2C%20quiero%20consultar%20disponibilidad%20de%20un%20repuesto%20Haceb">
+        CONSULTAR REPUESTOS HACEB
+      </a>
+    </div>
+  </section>
+
+  <section class="container dark-section">
+    <h2 class="section-title">
+      Repuestos Haceb con envíos a nivel nacional
+    </h2>
+    <div class="gold-line"></div>
+
+    <p class="section-intro">
+      Desde Bogotá atendemos consultas de repuestos para clientes
+      de diferentes ciudades de Colombia.
+    </p>
+
+    <p class="section-intro">
+      Los envíos se coordinan mediante empresas transportadoras.
+      El costo y el tiempo de entrega se confirman al momento
+      de realizar la cotización.
+    </p>
+
+    <p class="section-intro">
+      <strong>
+        Consulta disponibilidad, precio y opciones de envío
+        antes de realizar tu pedido.
+      </strong>
+    </p>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">
+      ¿Cómo solicitar servicio técnico o repuestos?
+    </h2>
+    <div class="gold-line"></div>
+
+    <div class="steps">
+      <article class="step">
+        <div class="step-number">1</div>
+        <h3>Cuéntanos qué necesitas</h3>
+        <p>
+          Indica si buscas instalación, reparación,
+          mantenimiento o un repuesto.
+        </p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">2</div>
+        <h3>Comparte los datos del equipo</h3>
+        <p>
+          Envíanos fotografías, modelo y referencia
           del electrodoméstico.
         </p>
-      </details>
+      </article>
 
-      <details>
-        <summary>¿Atienden fuera de Bogotá?</summary>
+      <article class="step">
+        <div class="step-number">3</div>
+        <h3>Consulta disponibilidad</h3>
         <p>
-          Consulta disponibilidad de servicio técnico en Soacha, Chía,
-          Cota, Mosquera, Funza y Madrid. Para repuestos realizamos
-          envíos a diferentes ciudades de Colombia.
+          Te informaremos sobre la atención técnica,
+          el repuesto, el precio y las opciones de entrega.
         </p>
-      </details>
+      </article>
+    </div>
+  </section>
 
-      <details>
-        <summary>¿Cómo identifico el repuesto correcto?</summary>
+  <section class="container" id="cobertura">
+    <h2 class="section-title">
+      Servicio técnico en Bogotá y municipios cercanos
+    </h2>
+    <div class="gold-line"></div>
+
+    <div class="coverage-box">
+      <p>
+        Consulta disponibilidad de atención técnica independiente
+        para electrodomésticos Haceb en:
+      </p>
+
+      <p class="coverage-list">
+        Bogotá D.C., Soacha, Sibaté, Chía, Cajicá, Zipaquirá,
+        Cota, Tenjo, Tabio, Mosquera, Funza, Madrid,
+        Facatativá, Bojacá, La Calera, Sopó, Tocancipá,
+        Gachancipá, El Rosal y Subachoque.
+      </p>
+
+      <p class="notice">
+        La disponibilidad del servicio se confirma según el municipio
+        y el tipo de atención solicitada. También realizamos envíos
+        de repuestos a diferentes ciudades de Colombia.
+      </p>
+
+      <div class="buttons">
+        <a class="btn"
+           href="https://wa.me/573219140639?text=Hola%2C%20quiero%20consultar%20disponibilidad%20de%20servicio%20tecnico%20Haceb%20en%20mi%20municipio">
+          CONSULTAR COBERTURA
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">
+      Preguntas frecuentes sobre servicio técnico y repuestos Haceb
+    </h2>
+    <div class="gold-line"></div>
+
+    <div class="faq">
+      <article class="faq-item">
+        <h3>¿Ofrecen servicio técnico para electrodomésticos Haceb?</h3>
         <p>
-          Envíanos una fotografía de la pieza y los datos del modelo
-          del electrodoméstico. Esto ayuda a verificar la referencia
-          y la compatibilidad.
+          Sí. Ofrecemos atención técnica independiente.
+          Puedes consultar diagnóstico, instalación, reparación
+          y mantenimiento según el tipo de equipo y la disponibilidad
+          del servicio.
         </p>
-      </details>
+      </article>
 
-      <details>
-        <summary>¿El servicio técnico es oficial de Haceb?</summary>
+      <article class="faq-item">
+        <h3>¿Qué electrodomésticos pueden atender?</h3>
+        <p>
+          Puedes consultar por estufas, neveras, lavadoras,
+          secadoras, hornos, calentadores, campanas extractoras,
+          lavavajillas y otros electrodomésticos.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>¿Venden repuestos originales Haceb?</h3>
+        <p>
+          Consulta disponibilidad de repuestos originales
+          y compatibles. La referencia y compatibilidad se verifican
+          según el modelo del electrodoméstico.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>¿Atienden fuera de Bogotá?</h3>
+        <p>
+          Consulta disponibilidad de servicio técnico en Bogotá D.C.,
+          Soacha, Sibaté, Chía, Cajicá, Zipaquirá, Cota, Tenjo,
+          Tabio, Mosquera, Funza, Madrid, Facatativá, Bojacá,
+          La Calera, Sopó, Tocancipá, Gachancipá, El Rosal
+          y Subachoque. Para repuestos realizamos envíos
+          a diferentes ciudades de Colombia.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>¿Cómo identifico el repuesto correcto?</h3>
+        <p>
+          Envíanos una fotografía de la pieza y los datos
+          del modelo del electrodoméstico. Esto ayuda a verificar
+          la referencia y la compatibilidad.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>¿El servicio técnico es oficial de Haceb?</h3>
         <p>
           Somos un centro de atención técnica independiente.
           No afirmamos ser un servicio técnico oficial ni autorizado
           por el fabricante Haceb.
         </p>
-      </details>
+      </article>
 
-      <details>
-        <summary>¿Cómo puedo solicitar una cotización?</summary>
+      <article class="faq-item">
+        <h3>¿Cómo puedo solicitar una cotización?</h3>
         <p>
-          Escríbenos por WhatsApp y comparte el modelo, la referencia
-          o una fotografía del equipo o repuesto que necesitas.
+          Escríbenos por WhatsApp y comparte el modelo,
+          la referencia o una fotografía del equipo o repuesto
+          que necesitas.
         </p>
-      </details>
-    </section>
+      </article>
+    </div>
+  </section>
 
-    <section id="contacto">
-      <div class="contact">
-        <h2>Solicita servicio técnico o cotiza tus repuestos Haceb</h2>
+  <section class="contact-section" id="contacto">
+    <h2>Solicita servicio técnico o cotiza tus repuestos Haceb</h2>
 
-        <p>
-          Estamos listos para recibir tu consulta y orientarte
-          sobre disponibilidad y opciones de atención.
-        </p>
+    <p>
+      Estamos listos para recibir tu consulta y orientarte
+      sobre disponibilidad y opciones de atención.
+    </p>
 
-        <p class="gold">
-          Bogotá y municipios cercanos · Envíos nacionales
-        </p>
+    <p>
+      Bogotá y municipios cercanos · Envíos nacionales
+    </p>
 
-        <a class="phone"
-           href="https://wa.me/573219140639?text=Hola%2C%20quiero%20informacion%20sobre%20servicio%20tecnico%20o%20repuestos%20Haceb."
-           target="_blank" rel="noopener">
-          321 914 0639
-        </a>
+    <a class="phone"
+       href="https://wa.me/573219140639?text=Hola%2C%20quiero%20informacion%20sobre%20servicio%20tecnico%20o%20repuestos%20Haceb">
+      321 914 0639
+    </a>
 
-        <div class="buttons">
-          <a class="btn btn-gold"
-             href="https://wa.me/573219140639?text=Hola%2C%20necesito%20servicio%20tecnico%20para%20un%20electrodomestico%20Haceb."
-             target="_blank" rel="noopener">
-            SOLICITAR SERVICIO
-          </a>
+    <div class="buttons">
+      <a class="btn"
+         href="https://wa.me/573219140639?text=Hola%2C%20necesito%20servicio%20tecnico%20para%20un%20electrodomestico%20Haceb">
+        SOLICITAR SERVICIO
+      </a>
 
-          <a class="btn btn-outline" href="tel:+573219140639">
-            LLAMAR
-          </a>
-        </div>
-      </div>
-    </section>
+      <a class="btn btn-outline"
+         href="tel:+573219140639">
+        LLAMAR
+      </a>
+    </div>
+  </section>
 
-    <section>
-      <h2>Conoce más sobre nuestros servicios y repuestos</h2>
+  <footer>
+    <p>
+      <strong>
+        Centro Especializado de Repuestos y Servicio Técnico
+        para Electrodomésticos
+      </strong>
+    </p>
 
-      <p>
-        También puedes visitar nuestra página de
-        <a class="gold" href="https://abbarepuestos.com/repuestos-abba-bogota.html">
-          repuestos y servicio técnico ABBA en Bogotá
-        </a>.
-      </p>
+    <p>
+      Atención técnica independiente · Instalación · Reparación
+      · Mantenimiento · Venta de repuestos
+    </p>
 
-      <p>
-        <a class="gold" href="https://abbarepuestos.com/">
-          Visitar página principal
-        </a>
-      </p>
-    </section>
+    <p>Haceb · Bogotá · Colombia</p>
 
-  </div>
+    <p>Teléfono y WhatsApp: 321 914 0639</p>
 
-</main>
+    <p>
+      Haceb es una marca de terceros. Este establecimiento
+      es independiente y no representa ni afirma ser un servicio
+      técnico oficial o autorizado por el fabricante.
+    </p>
 
-<footer>
-  <p>
-    <strong>
-      Centro Especializado de Repuestos y Servicio Técnico
-      para Electrodomésticos
-    </strong>
-  </p>
+    <p>
+      <a href="https://abbarepuestos.com/">Página principal</a>
+    </p>
 
-  <p>
-    Atención técnica independiente · Instalación · Reparación ·
-    Mantenimiento · Venta de repuestos
-  </p>
-
-  <p>
-    Haceb · Bogotá · Colombia
-  </p>
-
-  <p>
-    Teléfono y WhatsApp:
-    <a href="tel:+573219140639">321 914 0639</a>
-  </p>
-
-  <p>
-    Haceb es una marca de terceros. Este establecimiento es independiente
-    y no representa ni afirma ser un servicio técnico oficial o autorizado
-    por el fabricante.
-  </p>
-
-  <p>
-    <a href="https://abbarepuestos.com/">Página principal</a>
-  </p>
-
-  <p>© 2026 Todos los derechos reservados.</p>
-</footer>
-
-<a class="floating-whatsapp"
-   href="https://wa.me/573219140639?text=Hola%2C%20quiero%20consultar%20servicio%20tecnico%20o%20repuestos%20Haceb."
-   target="_blank" rel="noopener"
-   aria-label="Consultar servicio técnico y repuestos Haceb por WhatsApp">
-  WhatsApp
-</a>
+    <p>© 2026 Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
